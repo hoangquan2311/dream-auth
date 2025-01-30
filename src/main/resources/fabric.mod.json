@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "dreamauth",
+	"version": "${version}",
+	"name": "DreamAuth",
+	"description": "Vietnamese authentication mod for intergrated server on RadminVPN",
+	"authors": [
+		"Dream_Da_Vang"
+	],
+	"contact": {
+		"sources": "https://discord.gg/xjDAvGRUXX"
+	},
+	"license": "MIT",
+	"icon": "assets/dreamauth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dream.dreamauth.DreamAuth"
+		]
+	},
+	"mixins": [
+		"dreamauth.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=16",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
